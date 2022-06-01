@@ -20,4 +20,59 @@ background: $second-color;
 
 }
 
+$grayscale: map-merge(
+    (
+      "100": #EEF1F4,
+      "200": #DFE3E7,
+      "300": #CBCFD2,
+      "400": #B3B6B9,
+      "500": #9CA0A3,
+      "600": #7C7F82,
+      "700": #606365,
+      "800": #4A4C4F,
+      "900": #333536,
+    ),
+    $grayscale
+);
+
+%btn {
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 2px auto;
+  border-radius: 2px;
+  color: #FFFFFF;
+}
+
+.btn_success {
+  @extend %btn;
+  background-color: #108EFF;
+}
+.btn_alert {
+  @extend %btn;
+  background-color: #FF8516;
+}
+.btn_cancel {
+  @extend %btn;
+  background-color: #D61E20;
+}
+
+Result Skip Results Iframe
+EDIT ON
+@mixin container($ancho, $alto, $color) {
+  width: $ancho;
+  height: $alto;
+  background-color: $color;
+  border-radius: 5%;
+  text-align: center;
+  margin: 5px;
+} 
+
+.box_uno{
+  @include container(200px, 100px, #33D374)
+}
+.box_dos{
+  @include container(150px, 50px, #108EFF)
+}
+
 

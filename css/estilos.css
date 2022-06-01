@@ -3,4 +3,7 @@
   background: linear-gradient(90deg, #672441 0%, rgba(27, 40, 35, 0.65) 100%);
 }
 
+p {
+    color: map-get($grayscale, 400);
+}
 
